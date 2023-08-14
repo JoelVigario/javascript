@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos JS</title>
+    <style>
+        body {
+            font: normal 19pt Arial;
+        }
+
+        #d {
+            background-color: #f3cb96;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="d">Interaja</div>
+
+    <script>
+        d.addEventListener('mouseenter', entrar)
+        d.addEventListener('mouseout', sair)
+        d.addEventListener('mousemove', movendo)
+        d.addEventListener('click', clicou)
+
+        function entrar() {
+            d.innerText = 'Entrou!'
+        }
+
+        function sair () {
+            d.innerText = 'Saiu!'
+            d.style.background = '#f3cb96'
+        }
+
+        function movendo() {
+            d.style.background = 'coral'
+            d.style.color = 'black'
+        }
+
+        function clicou() {
+            d.innerText = 'Clicou!'
+            d.style.background = 'chocolate'
+            d.style.color = 'yellow'
+        }
+
+    </script>
+</body>
+</html>
