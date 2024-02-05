@@ -1,0 +1,64 @@
+/* 
+    Created on : 11/11/2023, 11:57:23
+    Author     : joel_vigario
+*/
+
+@charset "utf-8";
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: auto;
+}
+
+input {
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+input[type=number], input[type=text], input[type=submit], input[type=date], input[type=tel], label, select, input[type=month]  {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+label {
+    text-align: left;
+}
+
+input[type=submit] {
+    background-color: var(--verde-escuro1);
+    color: white;
+    margin-top: 10px;
+    font-size: 1.2em;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #237923;
+}
+
+textarea {
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+    body {
+        background-color: #a3d7a4;
+    }
+
+    .corpo {
+        background-color: white;
+        margin: 40px auto;
+        max-width: 700px;
+        padding: 30px 20px;
+        border-radius: 7px;
+        box-shadow: 0px 0px 16px rgba(0, 0, 0, .2);
+    }
+}
